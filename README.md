@@ -2,31 +2,6 @@
 
 This repository is a collection of my **JavaScript practice exercises** and a **full Express.js + MongoDB project**.  
 
----
-
-## 📂 Repository Structure
-fullstack-practice/
-│
-├── ArrayOperations/ # Practiced array methods (map, filter, etc.)
-├── ArrowFunction/ # Practiced ES6 arrow functions
-├── express-practice/ # Express.js + MongoDB practice project
-│ ├── app.js # Main Express application
-│ ├── .env # Environment variables (MongoDB URL, Port)
-│ ├── controllers/ # Controllers (User logic)
-│ ├── middleware/ # Custom middleware (auth, logger)
-│ ├── models/ # Mongoose schemas
-│ ├── routes/ # API routes
-│ └── node_modules/ # Installed dependencies
-│
-├── node_modules/ # Node dependencies
-├── capitalizeWords.js # Function to capitalize words
-├── longestWord.js # Function to find the longest word
-├── palindrome.js # Function to check palindrome
-├── reverseString.js # Function to reverse a string
-├── vowelsCount.js # Function to count vowels
-├── package.json # Project metadata & dependencies
-└── .gitignore # Git ignored files (node_modules, .env)
-
 
 ---
 
@@ -45,6 +20,51 @@ fullstack-practice/
 - ✅ Tested with Postman
 
 ---
+
+## 📚 What I Learned
+
+### 🔹 JavaScript Basics & Practice
+- Wrote functions for:
+  - **Reverse String**
+  - **Palindrome Check**
+  - **Vowel Count**
+  - **Longest Word in a String**
+  - **Capitalize Words**
+- Practiced **Array Operations** like:
+  - `map()`  
+  - `filter()`  
+- Used **ES6 Arrow Functions** to simplify code.
+
+### 🔹 Express.js & Middleware
+- Built a **Node.js + Express.js server**.
+- Created **routes** for `GET`, `POST`, and `DELETE`.
+- Added a **Logger Middleware** to track requests with timestamps.
+- Learned to use **Controllers** for cleaner code separation.
+- Implemented **Role-Based Access Control (RBAC)**:
+  - `Admin` → can create, read, and delete users.
+  - `Member` → can create and read users.
+  - `Guest` → can only read.
+
+### 🔹 MongoDB Atlas
+- Connected **MongoDB Atlas cloud database** with Mongoose.
+- Designed a **User Schema** with:
+  - `userName`
+  - `userId`
+  - `role (Admin / Member / Guest)`
+- Practiced **CRUD operations** with real data.
+
+### 🔹 Postman API Testing
+- Tested all routes with Postman:
+  - **GET /user/:name**
+  - **POST /user**
+  - **DELETE /user/:id** (Admin only)
+- Sent JSON data in POST requests:
+  ```json
+  {
+    "userName": "Mugilan",
+    "userId": "001",
+    "role": "Member"
+  }
 
 ## 🔧 Installation & Setup
 
