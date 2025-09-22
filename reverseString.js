@@ -1,4 +1,6 @@
 function reverseString(str){
-    return str.split("").revrese().join("");
+    return str.split("").reverse().join("");
 }
 console.log(reverseString("presidio"));
+
+
