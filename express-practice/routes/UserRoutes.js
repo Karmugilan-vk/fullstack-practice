@@ -4,9 +4,7 @@ const { getUser, createUser, deleteUser } = require("../controllers/UserControll
 const router = express.Router();
 
 router.get("/:name", checkRole(["Admin","Member","Guest"]), getUser);
-
 router.post("/", checkRole(["Admin","Member"]), createUser);
-
 router.delete("/:id", checkRole(["Admin"]), deleteUser);
 
 module.exports = router;

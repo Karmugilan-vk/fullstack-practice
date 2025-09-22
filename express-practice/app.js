@@ -10,14 +10,14 @@ const logger = require("./middleware/logger");
 
 app.use(logger);
 app.use(express.json());
+
 app.use("/user", userRoutes);
 
-app.get("/",(req,res) => {
+app.get("/", (req, res) => {
     res.send("Hello World with Logger Middleware!");
 });
 
-
-app.use((req,res) => {
+app.use((req, res) => {
     res.status(404).send("404 - Route Not Found");
 });
 

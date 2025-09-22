@@ -6,7 +6,7 @@ const getUser = (req,res) => {
 const createUser = (req,res) => {
     const userData = req.body;
     res.json({
-        message: "Data reveived succesfully!",
+        message: "Data received successfully!",
         data: userData
     });
 };
@@ -16,4 +16,4 @@ const deleteUser = (req,res) => {
     res.send(`User with ID ${userId} deleted (Admin only).`);
 };
 
-module.exports = { getUser, createUser, deleteUser};
+module.exports = { getUser, createUser, deleteUser };
